@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/label_hidden_number_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/label_hidden_number_interval"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/spinner_hidden_number_interval"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_hidden_number_interval"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        style="@style/styleSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_hidden_number_interval" />
+
+    <TextView
+        android:id="@+id/label_number_of_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/label_number_of_attempts"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber_number_of_attempts"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_hidden_number_interval" />
+
+    <EditText
+        android:id="@+id/editTextNumber_number_of_attempts"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/label_number_of_attempts"
+        android:importantForAutofill="no"
+        style="@style/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_number_of_attempts" />
+
+    <TextView
+        android:id="@+id/label_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/label_from"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber_from"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_number_of_attempts" />
+
+    <EditText
+        android:id="@+id/editTextNumber_from"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/label_from"
+        android:importantForAutofill="no"
+        style="@style/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_from" />
+
+    <TextView
+        android:id="@+id/label_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/label_before"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber_before"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_from" />
+
+    <EditText
+        android:id="@+id/editTextNumber_before"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/label_before"
+        android:importantForAutofill="no"
+        style="@style/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_before" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
